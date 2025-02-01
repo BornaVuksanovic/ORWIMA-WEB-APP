@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemorijskaJedinica</title>
+    <link rel="stylesheet" href="/styles/MemUnitStyle.css">
+</head>
+<body>
+    <header><h1>Konverter Memorijskih Jedinica</h1></header>
+
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="/types/Currencies.html">Valute</a>
+        <a href="/types/Temperature.html">Temperature</a>
+        <a>Memorijska jedinica</a>
+        <a href="/types/Text.html">Tekst</a>
+    </nav>
+
+    <main>
+        <div class="container1">
+            <table>
+                <tr> 
+                    <th>Memorijska jedinica</th> 
+                    <th>Opis</th> 
+                </tr> 
+                <tr> 
+                    <td>Kilo Byte</td>  
+                    <td>1 KB = 1024 Bytes</td> 
+                </tr> 
+                <tr> 
+                    <td>Mega Byte</td> 
+                    <td>1 MB = 1024 KB</td> 
+                </tr> 
+                <tr> 
+                    <td>Giga Byte</td> 
+                    <td>1 GB = 1024 MB</td> 
+                </tr> 
+                <tr> 
+                    <td>Tera Byte</td> 
+                    <td>1 TB = 1024 GB</td> 
+                </tr>                                     
+            </table>
+        </div>
+
+        <div class="container2">
+            <div class="item 1"><input type="text" id="velicina" name="velicina" value="1">  </div>
+            
+            <div class="item 2">  
+                <label for="opcijeIz">Iz:</label>
+                <select id="Iz">
+                    <option value="" disabled selected>Odaberite...</option>
+                    <option value="kB">kilobyte (kB)</option>
+                    <option value="MB">megabyte (MB)</option>
+                    <option value="GB">gigabyte (GB)</option>
+                    <option value="TB">terabyte (TB)</option>
+                </select>
+            </div>
+
+            <div class="item 3">
+                <label for="opcijeU">U:</label>
+                <select id="U">
+                    <option value="" disabled selected>Odaberite...</option>
+                    <option value="kB">kilobyte (kB)</option>
+                    <option value="MB">megabyte (MB)</option>
+                    <option value="GB">gigabyte (GB)</option>
+                    <option value="TB">terabyte (TB)</option>
+                </select>                
+            </div>
+            
+            <div class="item 4"><button type="button" onclick="PretvoriJedinicu()">Pretvori</button></div>
+         
+            <div class="item 5"><input type="text" id="rezultat" name="rezultat" readonly></div>          
+             
+        </div>
+   
+    </main>
+
+    <footer>
+        <p>© 2025 Konverter. Sva prava pridržana.</p>
+        <p>Razvio: Borna Vuksanović. Kontakt: <a href="mailto:boco.vuksanovic2@gmail.com">boco.vuksanovic2@gmail.com</a></p>
+        <p>Podaci su informativnog karaktera. Molimo provjerite točnost za službene svrhe.</p>
+    </footer>
+    <script src="/scripts/javaMemo.js"></script>
+</body>
+</html>

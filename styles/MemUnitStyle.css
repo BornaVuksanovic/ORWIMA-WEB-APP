@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    background-color: rgb(225, 225, 225)
+}
+header{
+    text-align: center;
+    font-size: x-large;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(190, 190, 190);
+    margin-bottom: 50px;
+}
+
+nav a{
+    padding: 20px;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(150, 150, 150); 
+}
+
+footer{
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 50px;
+
+}
+
+.item{
+  
+    height: 50px;
+}
+input{
+    font-size: large;
+}
+
+button{
+    font-size: large;
+}
+
+label{
+    font-size: large;
+}
+
+select{
+    font-size: large;
+}
+
+table{
+    font-size: large;
+}

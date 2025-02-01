@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuta</title>
+    <link rel="stylesheet" href="/styles/CurrenciesStyle.css">
+</head>
+<body>
+    <header><h1>Konverter Valuta</h1></header>
+
+    <nav>
+        <a href="Index.html">Home</a>
+        <a>Valute</a>
+        <a href="/types/Temperature.html">Temperature</a>
+        <a href="/types/MemoryUnit.html">Memorijska jedinica</a>
+        <a href="/types/Text.html">Tekst</a>
+    </nav>
+
+    <main>
+        <div class="container1">
+            <div><img src="/images/europa.png" alt="europa"> </div>
+            <div><img src="/images/usa.png" alt="usa"> </div>
+            <div><img src="/images/UK.png" alt="UK"> </div>    
+            <div><img src="/images/swis.png" alt="svicarska">  </div>   
+            <div><img src="/images/india.png" alt="indija"></div>         
+            
+        </div>
+
+        <div class="container2">
+           
+            <div class="item 1">
+                <input type="text" id="kolicina" name="kolicina" value="1">
+            </div>
+                
+            <div class="item 2">
+                <label for="opcijeIz">Iz:</label>
+                <select id="Iz">
+                    <option value="" disabled selected>Odaberite...</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="USD">Američki dolar (USD)</option>
+                    <option value="GBP">Funta (GBP)</option>
+                    <option value="CHF">Švicarski franak (CHF)</option>
+                    <option value="INR">Indijska rupija (INR)</option>
+                </select>
+             </div>
+
+            <div class="item 3">
+                <label for="opcijeU">U:</label>
+                <select id="U">
+                    <option value="" disabled selected>Odaberite...</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="USD">Američki dolar (USD)</option>
+                    <option value="GBP">Funta (GBP)</option>
+                    <option value="CHF">Švicarski franak (CHF)</option>
+                    <option value="INR">Indijska rupija (INR)</option>
+                </select>                    
+            </div>
+                
+            <div class="item 4">
+                <button type="button" onclick="PretvoriValute()">Pretvori</button>                
+            </div>
+                
+            <div class="itme 5">
+                <input type="text" id="rezultat" name="rezultat" readonly>
+            </div>               
+
+        </div>
+                    
+    </main>
+
+    <footer>
+        <p>© 2025 Konverter. Sva prava pridržana.</p>
+        <p>Razvio: Borna Vuksanović. Kontakt: <a href="mailto:boco.vuksanovic2@gmail.com">boco.vuksanovic2@gmail.com</a></p>
+        <p>Podaci su informativnog karaktera. Molimo provjerite točnost za službene svrhe.</p>
+    </footer>
+    <script src="/scripts/javaCurrencies.js"></script>
+</body>
+</html>
