@@ -12,7 +12,7 @@ function PretvoriTemperature() {
         return;
     }
     
-    let rezultat = null; // Deklaracija izvan `if` bloka
+    let rezultat = null; 
 
     if (izTemp == "C" && uTemp == "C") {
         rezultat = temperatura * 1;
